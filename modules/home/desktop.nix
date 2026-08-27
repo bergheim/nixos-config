@@ -19,6 +19,9 @@
 
   programs.fuzzel.enable = true;
   services.mako.enable = true;
-  programs.ghostty.enable = true;
+  programs.ghostty = {
+    enable = true;
+    settings.font-family = "JetBrainsMono Nerd Font Mono";
+  };
   programs.firefox.enable = true;
 }
