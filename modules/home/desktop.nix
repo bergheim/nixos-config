@@ -18,7 +18,7 @@
   };
 
   programs.fuzzel.enable = true;
-  programs.mako.enable = true;
+  services.mako.enable = true;
   programs.ghostty.enable = true;
   programs.firefox.enable = true;
 }
