@@ -2,6 +2,8 @@
   imports = [
     ./common.nix
     ./desktop.nix
+    ./zsh.nix
+    ./tmux.nix
   ];
 
   home.username = "tsb";

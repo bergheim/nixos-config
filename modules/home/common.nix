@@ -1,12 +1,5 @@
 { pkgs, ... }:
 {
-  programs.zsh = {
-    enable = true;
-    autosuggestion.enable = true;
-    enableCompletion = true;
-    syntaxHighlighting.enable = true;
-  };
-
   programs.git = {
     enable = true;
     userName = "bergheim";
@@ -18,5 +11,10 @@
   home.packages = with pkgs; [
     fd
     ripgrep
+    nodejs_24
+    pnpm
   ];
+
+  home.sessionVariables.PNPM_HOME = "/home/tsb/.local/share/pnpm";
+  home.sessionPath = [ "/home/tsb/.local/share/pnpm/bin" ];
 }

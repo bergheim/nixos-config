@@ -25,6 +25,7 @@
   console.useXkbConfig = true;
 
   programs.zsh.enable = true;
+  environment.pathsToLink = [ "/share/zsh" ];
 
   users.users.tsb = {
     isNormalUser = true;
